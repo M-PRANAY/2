@@ -1,31 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function About(props) {
-    const [myStyle, setMyStyle] = useState({
-        color:props.mode === 'dark'?'white' : 'black', backgroundColor:props.mode ==='dark'?'black':'white'
-    });
+    // const [myStyle, setMyStyle] = useState({
+    //     color:props.mode === 'dark'?'white' : 'black', backgroundColor:props.mode ==='dark'?'black':'white'
+    // });
 
-    const [btntext, setbtntext] = useState("Enable Dark Mode");
+    // const [btntext, setbtntext] = useState("Enable Dark Mode");
 
     
-    const handleModeSwitch = () => {
-        if (myStyle.color === "white") {
-            setMyStyle({
+    // const handleModeSwitch = () => {
+    //     if (myStyle.color === "white") {
+    //         setMyStyle({
 
-                color: "black",
-                backgroundColor: "white",
+    //             color: "black",
+    //             backgroundColor: "white",
 
-            });
-            setbtntext("Enable Dark Mode");
-        } else {
-            setMyStyle({
-                color: "white",
-                backgroundColor: "black",
-                border: '1px solid white'    
-            });
-            setbtntext("Enable Light Mode");
-        }
-    };
+    //         });
+    //         setbtntext("Enable Dark Mode");
+    //     } else {
+    //         setMyStyle({
+    //             color: "white",
+    //             backgroundColor: "black",
+    //             border: '1px solid white'    
+    //         });
+    //         setbtntext("Enable Light Mode");
+    //     }
+    // };
 
     return (
         <div className="container" style={{color:props.mode === 'dark'?'white' : 'black', backgroundColor:props.mode ==='dark'?'black':'white'}}>
